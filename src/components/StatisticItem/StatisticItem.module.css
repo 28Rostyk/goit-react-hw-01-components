@@ -1,0 +1,15 @@
+.stats_item {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.label {
+  display: block;
+  text-align: center;
+}
+
+.percentage {
+  display: block;
+  text-align: center;
+}
