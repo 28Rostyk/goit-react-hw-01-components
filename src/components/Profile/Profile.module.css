@@ -24,39 +24,36 @@
 }
 
 .name {
-  margin-top: 20px;
   font-weight: 700;
   text-align: center;
 }
 
 .tag {
-  margin-top: 8px;
   text-align: center;
 }
 
 .location {
-  margin-top: 8px;
   text-align: center;
 }
 
 .stats {
-  display: flex;
-  list-style: none;
-  background-color: #f5efef;
-  margin-top: 30px;
+  background-color: azure;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .item {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid gainsboro;
   text-align: center;
-  width: 93px;
-  padding: 10px;
 }
 
 .label {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: block;
 }
 

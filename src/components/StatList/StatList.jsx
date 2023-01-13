@@ -1,22 +1,18 @@
-import css from '../StatisticList/StatisticList.module.css';
+import css from './StatList.module.css';
 import PropTypes from 'prop-types';
-import { StatisticItem } from 'components/StatisticItem/StatisticItem';
+import { StatItem } from 'components/StatItem/StatItem';
 
-export const StatisticList = ({ stats }) => {
+export const Statlist = ({ stats }) => {
   return (
     <ul className={css.list}>
       {stats.map(({ id, label, percentage }) => (
-        <StatisticItem
-          key={id}
-          label={label}
-          percentage={percentage}
-        ></StatisticItem>
+        <StatItem key={id} label={label} percentage={percentage}></StatItem>
       ))}
     </ul>
   );
 };
 
-StatisticList.propTypes = {
+Statlist.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
