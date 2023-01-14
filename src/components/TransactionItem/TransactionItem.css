@@ -3,9 +3,9 @@ tr {
 }
 
 tr:nth-child(odd) {
-  background-color: bisque;
+  background-color: wheat;
 }
 
 tr:nth-child(even) {
-  background-color: aquamarine;
+  background-color: white;
 }
