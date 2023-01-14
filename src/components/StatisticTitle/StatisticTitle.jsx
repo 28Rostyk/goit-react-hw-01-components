@@ -1,4 +1,4 @@
-import css from '../StatisticTitle/StatisticTitle.module.css';
+import css from './StatisticTitle.module.css';
 import PropTypes from 'prop-types';
 
 export const StatisticTitle = ({ title }) => {
