@@ -1,8 +1,8 @@
 import css from './StatisticItem.module.css';
 import PropTypes from 'prop-types';
-import { getRandomHexColor } from '../../utils/randomColor';
+import { getRandomHexColor } from '../../utils/getBgColor';
 
-export const StatisticItem = ({ label, percentage }) => (
+export const StatItem = ({ label, percentage }) => (
   <li
     style={{
       backgroundColor: getRandomHexColor(),
@@ -14,7 +14,7 @@ export const StatisticItem = ({ label, percentage }) => (
   </li>
 );
 
-StatisticItem.propTypes = {
+StatItem.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };

@@ -1,10 +1,8 @@
 import css from './StatisticTitle.module.css';
 import PropTypes from 'prop-types';
 
-export const StatisticTitle = ({ title }) => {
-  return <h2 className={css.title}>{title}</h2>;
-};
+export const StatTitle = ({ title }) => <h2 className={css.title}>{title}</h2>;
 
-StatisticTitle.propTypes = {
+StatTitle.propTypes = {
   title: PropTypes.string,
 };
