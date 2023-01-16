@@ -8,3 +8,33 @@
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
   overflow: hidden;
 }
+
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #616161;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.stats_item {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.label {
+  display: block;
+  text-align: center;
+}
+
+.percentage {
+  display: block;
+  text-align: center;
+}

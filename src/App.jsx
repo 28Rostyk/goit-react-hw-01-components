@@ -1,18 +1,16 @@
 import user from './data/user.json';
 import data from './data/data.json';
 import friends from './data/friends.json';
-import  transactions from "./data/transactions.json";
+import transactions from './data/transactions.json';
 import { Profile } from './components/Profile/Profile';
 import { Statistics } from 'components/Statistic/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
-import {TransactionHistory} from "./components/TransactionHistory/TransactionHistory"
-
+import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
     <>
       <Profile
-        key={user.username}
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -26,7 +24,5 @@ export const App = () => {
 
       <TransactionHistory items={transactions} />
     </>
-  
   );
-}
-
+};

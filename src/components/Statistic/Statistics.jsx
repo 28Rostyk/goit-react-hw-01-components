@@ -1,15 +1,39 @@
-import { Statlist } from 'components/StatisticList/StatisticList';
-import { StatTitle } from 'components/StatisticTitle/StatisticTitle';
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
+import { getRandomHexColor } from 'utils/getBgColor';
 
-export const Statistics = ({ stats, title }) => (
-  <section className={css.statistics}>
-    {title && <StatTitle title={title}></StatTitle>}
-    <Statlist stats={stats}></Statlist>
-  </section>
-);
+export const Statistics = ({ title, stats }) => {
+  return (
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
 
-StatTitle.propTypes = {
+      <ul className={css.list}>
+        {stats.map(({ id, label, percentage }) => {
+          return (
+            <li
+              key={id}
+              style={{
+                backgroundColor: getRandomHexColor(),
+              }}
+              className={css.stats_item}
+            >
+              <span className={css.label}>{label}</span>
+              <span className={css.percentage}>{percentage}%</span>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+};
+
+Statistics.propTypes = {
   title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
 };
