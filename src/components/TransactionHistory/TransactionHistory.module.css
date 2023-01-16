@@ -23,3 +23,15 @@ td {
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+tr {
+  height: 30px;
+}
+
+tr:nth-child(odd) {
+  background-color: wheat;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}

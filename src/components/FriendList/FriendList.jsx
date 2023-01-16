@@ -1,5 +1,5 @@
 import css from './FriendList.module.css';
-import { FriendListItem } from 'components/FriendItem/FriendListItem';
+import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
@@ -11,7 +11,7 @@ export const FriendList = ({ friends }) => {
           name={name}
           avatar={avatar}
           isOnline={isOnline}
-        ></FriendListItem>
+        />
       ))}
     </ul>
   );
